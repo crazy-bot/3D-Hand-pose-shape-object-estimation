@@ -30,8 +30,8 @@ We are using recently published dataset of hand-object interaction
 ![shape2](Results/mesh2d.png)
 
 
-******Detail will be updated after completion of the project*******
+******Detail will be updated after completion of the project******
 
-######## HOnnotate Gitlab Challenge Link [here](https://competitions.codalab.org/competitions/22485#results)
+##### HOnnotate Gitlab Challenge Link [here](https://competitions.codalab.org/competitions/22485#results)
 
 
