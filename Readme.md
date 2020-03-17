@@ -32,6 +32,8 @@ We are using recently published dataset of hand-object interaction
 **Sparse to Dense shape**
 ![dense1](Results/colored1.png) 
 ![dense2](Results/colored2.png)
+![dense1](Results/densemesh3.png) 
+![dense2](Results/densemesh4.png)
 
 ******Detail will be updated after completion of the project******
 
