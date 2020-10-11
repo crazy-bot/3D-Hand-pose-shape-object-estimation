@@ -1,11 +1,19 @@
 # 3D Hand Pose & Shape Estimation for hand-object interaction dataset from single depth image
 
-<figure class="image">
-  <img src="{{ include.url }}" alt="{{ include.description }}">
-  <figcaption>{{ include.description }}</figcaption>
-</figure>
+<div class="image-wrapper" >
+  {% if include.url %}
+  <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
+  {% endif %}
+      <img src="{{ site.url }}/{{ include.img }}" alt="{{ include.title }}"/>
+  {% if include.url %}
+  </a>
+  {% endif %}
+  {% if include.caption %}
+      <p class="image-caption">{{ include.caption }}</p>
+  {% endif %}
+</div>
 
-{% include image.html url="Results/HOpipeline3.PNG" description="My cat, Robert Downey Jr." %}
+{% include image.html img="Results/HOpipeline3.PNG" title="" caption="abc" %}
 
 ## Approach
 ![pipeline](Results/HOpipeline3.PNG)
