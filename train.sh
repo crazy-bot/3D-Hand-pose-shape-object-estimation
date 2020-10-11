@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 PYTHONPATH='.' python3 src/train_HO_PSNet.py
