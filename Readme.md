@@ -16,7 +16,7 @@ We are using public hand-object interaction dataset HO3D published by:
 
 **Complexity:** Ariculated hand poses are complex and mostly occluded with objects. Objects can have many different shape, size and orientation which makes the problem much harder than only isolated hand pose and shape estimation.
 
-**Data used:** Single depthimage
+**Data used:** Single depth image.
 
 ### Quantitative Results:
 
