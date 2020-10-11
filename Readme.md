@@ -1,18 +1,9 @@
 # 3D Hand Pose & Shape Estimation for hand-object interaction dataset from single depth image
 
-<div class="image-wrapper" >
-  
-  <img src="{{ site.url }}/{{ include.img }}" alt="{{ include.title }}"/>
- 
-  {% if include.caption %}
-      <p class="image-caption">{{ include.caption }}</p>
-  {% endif %}
-</div>
-
-{% include image.html img="Results/HOpipeline3.PNG" title="" caption="abc" %}
-
 ## Approach
 ![pipeline](Results/HOpipeline3.PNG)
+
+Overall architecture of our proposed method. HO_PNet takes voxelized depth map and estimates 3D heat map of hand joints and object bounding box. A resized voxelized depth map is concatenated channel wise with the predicted heatmap from HO_PNet. This is passed to HO_VNet that produces voxelized shape. This is used to enrich voxelized depth map and then concatenated channel wise with the predicted heatmap. This is passed as input to HO\_SNet that directly regress hand and object surface points.
 
 ## Dataset
 
