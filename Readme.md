@@ -7,38 +7,39 @@ Overall architecture of our proposed method. HO_PNet takes voxelized depth map a
 
 ## Dataset
 
-We are using recently published dataset of hand-object interaction
+We are using public hand-object interaction dataset HO3D published by:
 
 [HOnnotate: A method for 3D Annotation of Hand and Objects Poses](https://www.tugraz.at/institute/icg/research/team-lepetit/research-projects/hand-object-3d-pose-annotation/)
 
-**Complexity:** Hand poses are complex and mostly occluded with objects. Objects can have many different shape and pose which makes the problem harder
+#### A few images from the dataset:
+![ho3d](Results/ho3dimg.png)
 
-**Data format:** Single monocular depthimage
+**Complexity:** Ariculated hand poses are complex and mostly occluded with objects. Objects can have many different shape, size and orientation which makes the problem much harder than only isolated hand pose and shape estimation.
+
+**Data used:** Single depthimage
 
 ### Qualitative Results--
 
-**sample depth images**
-
-![depth1](Results/depthorg1.png) ![depth2](Results/depthorg2.png)
-
 **Pose Prediction Result**
 
-![pose1](Results/git2.png) 
+![pose1](Results/valid_pose2.png) 
 
-![pose2](Results/git1.png)
+Pose estimation results for hand and object on validation set. \textbf{1st column:} 2D projection of ground truth pose. \textbf{2nd column:} 2D projection of predicted pose. \textbf{3rd column:} 3D representation of ground truth pose. \textbf{4th column:} 3D representation of predicted pose. Hand keypoints and object keypoints have been connected to visualize the hand skeleton and object bounding box.
 
 **Shape Prediction Result**
 
-![shape1](Results/mesh3d1.png) 
-![shape2](Results/mesh3d2.png)
-![shape1](Results/mesh2d1.png) 
-![shape2](Results/mesh2d.png)
+![shape1](Results/valid_shape2.png)
 
-**Sparse to Dense shape**
-![dense1](Results/colored1.png) 
-![dense2](Results/colored2.png)
-![dense1](Results/densemesh3.png) 
-![dense2](Results/densemesh4.png)
+Shape estimation results for hand and object on validation set. \textbf{1st column:} 2D projection of ground truth shape vertices. \textbf{2nd column:} 2D projection of predicted shape vertices. <br> 3rd column: <\br> 3D representation of ground truth shape vertices. \textbf{4th column:} 3D representation of predicted shape vertices.
+
+**Mesh Reconstruction**
+
+![shape1](Results/valid_mesh.png)
+
+Reconstruction of hand and object mesh on validation set. The meshes are reconstructed from the shape vertices.
+
+
+
 
 ******Detail will be updated after completion of the project******
 
