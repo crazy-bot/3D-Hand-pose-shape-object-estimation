@@ -18,19 +18,27 @@ We are using public hand-object interaction dataset HO3D published by:
 
 **Data used:** Single depthimage
 
-### Qualitative Results--
+### Quantitative Results:
+
+![ho3d](Results/codelab_eval.png)
+
+Evaluation metrics for hand on withheld evaluation dataset as present in the codelab challenge. "Sguha" refers to our submission which is leading other submissions for both hand key points and hand mesh at the time of this experiment.
+
+##### HOnnotate Gitlab Challenge Link [here](https://competitions.codalab.org/competitions/22485#results). "Non Aligned" table is applicable for our approach.
+
+### Qualitative Results:
 
 **Pose Prediction Result**
 
 ![pose1](Results/valid_pose2.png) 
 
-Pose estimation results for hand and object on validation set. \textbf{1st column:} 2D projection of ground truth pose. \textbf{2nd column:} 2D projection of predicted pose. \textbf{3rd column:} 3D representation of ground truth pose. \textbf{4th column:} 3D representation of predicted pose. Hand keypoints and object keypoints have been connected to visualize the hand skeleton and object bounding box.
+Pose estimation results for hand and object on validation set. **1st column:** 2D projection of ground truth pose. **2nd column:** 2D projection of predicted pose. **3rd column:** 3D representation of ground truth pose. **4th column:** 3D representation of predicted pose. Hand keypoints and object keypoints have been connected to visualize the hand skeleton and object bounding box.
 
 **Shape Prediction Result**
 
 ![shape1](Results/valid_shape2.png)
 
-Shape estimation results for hand and object on validation set. \textbf{1st column:} 2D projection of ground truth shape vertices. \textbf{2nd column:} 2D projection of predicted shape vertices. <br> 3rd column: <\br> 3D representation of ground truth shape vertices. \textbf{4th column:} 3D representation of predicted shape vertices.
+Shape estimation results for hand and object on validation set. **1st column:** 2D projection of ground truth shape vertices. **2nd column:** 2D projection of predicted shape vertices. **3rd column:** 3D representation of ground truth shape vertices. **4th column:** 3D representation of predicted shape vertices.
 
 **Mesh Reconstruction**
 
@@ -40,9 +48,5 @@ Reconstruction of hand and object mesh on validation set. The meshes are reconst
 
 
 
-
-******Detail will be updated after completion of the project******
-
-##### HOnnotate Gitlab Challenge Link [here](https://competitions.codalab.org/competitions/22485#results)
 
 
